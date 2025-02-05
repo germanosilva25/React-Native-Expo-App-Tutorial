@@ -26,3 +26,40 @@ To change the account logged into the Expo CLI, you can follow these steps:
    ```bash
    expo login
    ```
+
+
+   Esse erro ocorre porque o Expo está tentando rodar o aplicativo no modo **development build**, mas você ainda não criou e instalou um build de desenvolvimento no seu dispositivo.  
+
+### 🔧 **Como Resolver?**  
+
+#### 1️⃣ **Criar um Development Build**
+Execute o seguinte comando para gerar um build de desenvolvimento:  
+**Esse comando cria a pasta /android**
+```sh
+npx expo run:android
+```
+Isso criará e instalará o app no seu emulador/dispositivo.
+
+Se você estiver no iOS, use:
+```sh
+npx expo run:ios
+```
+> 📌 **Observação**: Se você estiver usando o **Expo Go**, ele **não** suporta pacotes com bibliotecas nativas personalizadas. Você precisa usar um build de desenvolvimento.
+
+#### 2️⃣ **Instalar o Build no Celular**
+Se o build foi gerado na **nuvem** (EAS Build), instale-o manualmente no celular:  
+```sh
+npx expo install:android
+```
+Ou para iOS:
+```sh
+npx expo install:ios
+```
+
+#### 3️⃣ **Tentar Novamente**
+Após instalar o build de desenvolvimento, rode novamente:
+```sh
+npx expo start
+```
+
+Se ainda tiver problemas, me avise! 🚀
