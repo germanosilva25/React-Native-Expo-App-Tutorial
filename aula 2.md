@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 export default MeuComponente;
 ```
 
-### Explicação do Código:
+
 
 1. **Importação de componentes**:
    - `View`: Um componente contêiner básico que organiza outros componentes em layout.
@@ -56,13 +56,13 @@ export default MeuComponente;
 5. **Exportação**:
    - O componente é exportado no final para ser usado em outras partes do aplicativo.
 
-### Como Usar:
+
 
 Esse componente pode ser inserido em um aplicativo React Native em um arquivo `.js` e chamado dentro de um componente de navegação ou diretamente na renderização principal do aplicativo. Ao clicar no botão, a mensagem será alterada dinamicamente.
 
 
-# Outro Exemplo
-Aqui está um exemplo de uma página em **React Native** que utiliza mais de um componente, com cada componente sendo separado e exportado adequadamente. A página irá exibir uma lista de itens, onde cada item é um componente separado, e você terá um componente principal que agrupa tudo.
+
+Exemplo de uma página em **React Native** que utiliza mais de um componente, com cada componente sendo separado e exportado adequadamente. A página irá exibir uma lista de itens, onde cada item é um componente separado, e você terá um componente principal que agrupa tudo.
 
 ### Estrutura de Arquivos:
 - **App.js** (Arquivo principal, onde a página e os componentes são usados)
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
 export default App;
 ```
 
-### Explicação do Código:
+
 
 1. **Header.js**:
    - Este componente exibe o cabeçalho da página, que contém o título "Minha Lista de Itens". Ele é exportado com `export default Header` para ser utilizado em outros arquivos.
